@@ -28,10 +28,7 @@ class MainActivityFragment : Fragment() {
 
         button.setOnClickListener {
 
-            //            for (i in 1..1000) {
-
             startJobService(1)
-//            }
         }
 
     }

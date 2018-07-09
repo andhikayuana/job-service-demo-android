@@ -27,6 +27,7 @@ class App : Application() {
 
             val jobInfo = JobInfo.Builder(1, componentName)
                     .setMinimumLatency(TimeUnit.SECONDS.toMillis(60))
+                    .setOverrideDeadline(TimeUnit.SECONDS.toMillis(10))
                     .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
                     .setPersisted(true)
                     .build()
