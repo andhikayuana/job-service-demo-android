@@ -22,7 +22,7 @@ class MainJobService : JobService() {
 
     override fun onStartJob(jobParameters: JobParameters?): Boolean {
 
-        Log.d(TAG, "onStartJob" + jobParameters.toString())
+        Log.d(TAG, "onStartJob : " + jobParameters.toString())
 
         doTask()
 
@@ -47,7 +47,7 @@ class MainJobService : JobService() {
     private fun doTask() {
         Log.d(TAG, "doTask")
         try {
-            Thread.sleep(20000)
+            Thread.sleep(3000)
         } catch (e: InterruptedException) {
             e.printStackTrace()
         }
